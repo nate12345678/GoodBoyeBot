@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ab021d-010a-4a01-bf54-c9e79930b413" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/Command.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/Help.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Globals.java" afterPath="$PROJECT_DIR$/src/main/java/main/Globals.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" afterPath="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,11 +39,25 @@
       <file leaf-file-name="GoodBoyeBot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+            <state relative-caret-position="432">
+              <caret line="54" column="1580" lean-forward="false" selection-start-line="54" selection-start-column="1580" selection-end-line="54" selection-end-column="1580" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Help.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="method#run#0;class#Help#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +66,7 @@
       <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="411">
               <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -416,6 +429,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Globals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/help.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" />
       </list>
     </option>
@@ -475,6 +489,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoodBoyeBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoodBoyeBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoodBoyeBot" type="b2602c69:ProjectViewProjectNode" />
@@ -612,12 +634,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519490018684</updated>
-      <workItem from="1519490022345" duration="5854000" />
+      <workItem from="1519490022345" duration="7393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5854000" />
+    <option name="totallyTimeSpent" value="7393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -684,9 +706,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Globals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="411">
           <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -696,21 +726,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Globals.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="512">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="method#run#0;class#Help#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+        <state relative-caret-position="432">
+          <caret line="54" column="1580" lean-forward="false" selection-start-line="54" selection-start-column="1580" selection-end-line="54" selection-end-column="1580" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
           </folding>
         </state>
       </provider>
