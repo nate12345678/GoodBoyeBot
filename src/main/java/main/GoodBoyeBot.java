@@ -1,8 +1,6 @@
 package main;
 
-/**
- * Nate Post, Armaan Shah,
- */
+
 
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
@@ -20,11 +18,19 @@ import javax.security.auth.login.LoginException;
 
 import commands.Command;
 import commands.Help;
+import commands.MemeBank;
+import commands.Shutdown;
 import commands.SpankBank;
 
+/**
+ * @author Nate Post, Armaan Shah
+ * Last updated: 2/24/18
+ */
 public class GoodBoyeBot extends ListenerAdapter {
 	static JDA jda;
+	
 	static String key = Globals.KEY + "";
+	
 	private static final LinkedHashMap<String, Command> commands = Command.getCommandMap();
 	
 	
@@ -40,14 +46,22 @@ public class GoodBoyeBot extends ListenerAdapter {
 		}
 	}
 	
+	
 	/**
 	 * adds all commands to the hashmap we use to call commands
 	 */
 	private static void commandToMap() {
 		Help help = new Help();
 		SpankBank spankBank = new SpankBank();
+		MemeBank memeBank = new MemeBank();
+		Shutdown shutdown = new Shutdown();
 	}
 	
+	
+	/**
+	 * Method that is called every time a message is sent to the server
+	 * @param event the event call that triggered this method
+	 */
 	@Override
 	public void onMessageReceived(MessageReceivedEvent event) {
 		//get message info
