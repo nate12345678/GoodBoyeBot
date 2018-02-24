@@ -1,5 +1,6 @@
 package main;
 
+import commands.GoodBoyePoints;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
@@ -10,6 +11,7 @@ import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import javax.security.auth.login.LoginException;
@@ -21,6 +23,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 	static JDA jda;
 	static String key = Globals.KEY + "";
 	private static final LinkedHashMap<String, Command> commands = Command.getCommandMap();
+	public static ArrayList<GoodBoyeUser> users = new ArrayList<GoodBoyeUser>();
 	
 	
 	public static void main(String[] args) {
@@ -37,6 +40,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 	
 	private static void commandToMap() {
 		Help help = new Help();
+		GoodBoyePoints goodboyepoints = new GoodBoyePoints();
 	}
 	
 	@Override
@@ -49,6 +53,13 @@ public class GoodBoyeBot extends ListenerAdapter {
 		if ((messageContent.startsWith(key) || channel.getName().equals("bot")) && !author.isBot()) {
 			if (messageContent.startsWith(key)) messageContent = messageContent.substring(1);
 			String[] args = messageContent.split(" ");
+			for(int i = 0; i < users.size(); i++){
+				if(author.getName().equals(users.get(i).getName())){
+					users.get(i).givePoints(0.1);
+				} else {
+					users.add(new GoodBoyeUser(author.getName()));
+				}
+			}
 			if (commands.containsKey(args[0])) {
 				commands.get(args[0]).run(event, null);
 			} else {
