@@ -11,6 +11,7 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import javax.security.auth.login.LoginException;
@@ -33,7 +34,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 	static String key = Globals.KEY + "";
 	
 	private static final LinkedHashMap<String, Command> commands = Command.getCommandMap();
-	public static ArrayList<GoodBoyeUser> users = new ArrayList<GoodBoyeUser>();
+	public static HashMap<String, GoodBoyeUser> users = new HashMap<>();
 	
 	
 	public static void main(String[] args) {
@@ -63,6 +64,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 	
 	/**
 	 * Method that is called every time a message is sent to the server
+	 *
 	 * @param event the event call that triggered this method
 	 */
 	@Override
@@ -77,12 +79,11 @@ public class GoodBoyeBot extends ListenerAdapter {
 		if ((messageContent.startsWith(key) || channel.getName().equals("bot")) && !author.isBot()) {
 			if (messageContent.startsWith(key)) messageContent = messageContent.substring(1);
 			String[] args = messageContent.split(" ");
-			for(int i = 0; i < users.size(); i++){
-				if(author.getName().equals(users.get(i).getName())){
-					users.get(i).givePoints(0.1);
-				} else {
-					users.add(new GoodBoyeUser(author.getName()));
-				}
+			if (users.containsKey(author.getName())) {
+				users.get(author.getName()).givePoints(0.1);
+			} else {
+				users.put(author.getName(), new GoodBoyeUser(author.getName()));
+				users.get(author.getName()).givePoints(.1);
 			}
 			if (commands.containsKey(args[0])) {
 				commands.get(args[0]).run(event, args);
