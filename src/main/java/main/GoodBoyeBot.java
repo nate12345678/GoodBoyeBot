@@ -83,7 +83,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 				users.get(author.getName()).givePoints(0.1);
 			} else {
 				users.put(author.getName(), new GoodBoyeUser(author.getName()));
-				users.get(author.getName()).givePoints(.1);
+				users.get(author.getName()).givePoints(0.1);
 			}
 			if (commands.containsKey(args[0])) {
 				commands.get(args[0]).run(event, args);

@@ -35,7 +35,7 @@ public class GoodBoyePoints extends Command {
 				GoodBoyeBot.users.get(args[2]).givePoints(Double.parseDouble(args[3]));
 				break;
 			case "balance":
-				channel.sendMessage(GoodBoyeBot.users.get(author.getName()).getName() + " has " + GoodBoyeBot.users.get(author.getName()).getPoints() + " 'Good Boye Points'").queue();
+				channel.sendMessage(GoodBoyeBot.users.get(author.getName()).getName() + " has " + String.format("%.1f", GoodBoyeBot.users.get(author.getName()).getPoints()) + " 'Good Boye Points'").queue();
 				break;
 			default:
 				event.getChannel().sendMessage("Arguments invalid. type \"goodboyepoints help\" for more info.").queue();
