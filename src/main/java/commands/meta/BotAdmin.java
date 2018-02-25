@@ -59,6 +59,14 @@ public class BotAdmin extends Command {
 					output += "```";
 					event.getChannel().sendMessage(output).queue();
 					break;
+				case "listusers":
+					String userOutput = "```users:\n";
+					for (GoodBoyeUser user : GoodBoyeBot.users.values()) {
+						userOutput += user.getName() + "\n";
+					}
+					userOutput += "```";
+					event.getChannel().sendMessage(userOutput).queue();
+					break;
 				default:
 					event.getChannel().sendMessage("args[1] is not a valid command.").queue();
 					break;

@@ -32,7 +32,7 @@ public class SpankBank extends Command {
 	
 	@Override
 	public void run(MessageReceivedEvent event, String[] args) {
-		if (args.length < 2) {
+		if (args.length < 2 && event.getChannel().getName().equals("retarded")) {
 			event.getChannel().sendMessage("Arguments invalid. type \"spankbank help\" for more info.").queue();
 		}
 		switch (args[1]) {

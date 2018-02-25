@@ -18,6 +18,10 @@ public class Shutdown extends Command {
 	
 	@Override
 	public void run(MessageReceivedEvent event, String[] args) {
+		if (!GoodBoyeBot.users.get(event.getAuthor().getName()).isBotAdmin()) {
+			event.getChannel().sendMessage("Permissions error. You are not admin for this bot").queue();
+			return;
+		}
 		if (args.length == 1) {
 			for (Command command : getCommandMap().values()) {
 				command.end();
