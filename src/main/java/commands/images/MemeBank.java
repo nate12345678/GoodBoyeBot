@@ -1,4 +1,4 @@
-package commands;
+package commands.images;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -7,13 +7,15 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 
+import commands.Command;
+
 
 /**
  * @author Nate Post
  * Last Updated: 2/22/2018
  */
 public class MemeBank extends Command {
-	static final String SPANK_HELP = "```Usage:\n\n" +
+	static final String MEME_HELP = "```Usage:\n\n" +
 			"Withdraw [int]: returns specified memebank image, or random if no int specified\n\n" +
 			"Deposit: deposits image attached to command in the meme bank\n\n" +
 			"Balance: returns the number of images in the meme bank\n\n" +
@@ -35,7 +37,7 @@ public class MemeBank extends Command {
 		}
 		switch (args[1]) {
 			case "help":
-				event.getChannel().sendMessage(SPANK_HELP).queue();
+				event.getChannel().sendMessage(MEME_HELP).queue();
 				break;
 			case "withdraw":
 				if (args.length > 2) {
@@ -81,7 +83,7 @@ public class MemeBank extends Command {
 	
 	@Override
 	public String getUsage() {
-		return getName();
+		return getName() + "[String] {int}";
 	}
 	
 	

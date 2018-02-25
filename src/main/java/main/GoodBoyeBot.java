@@ -10,17 +10,17 @@ import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import javax.security.auth.login.LoginException;
 
 import commands.Command;
-import commands.Help;
-import commands.MemeBank;
-import commands.Shutdown;
-import commands.SpankBank;
+import commands.meta.BotAdmin;
+import commands.meta.Help;
+import commands.images.MemeBank;
+import commands.meta.Shutdown;
+import commands.images.SpankBank;
 import commands.GoodBoyePoints;
 
 
@@ -58,6 +58,7 @@ public class GoodBoyeBot extends ListenerAdapter {
 		GoodBoyePoints goodboyepoints = new GoodBoyePoints();
 		SpankBank spankBank = new SpankBank();
 		MemeBank memeBank = new MemeBank();
+		BotAdmin botAdmin = new BotAdmin();
 		Shutdown shutdown = new Shutdown();
 	}
 	
@@ -82,8 +83,8 @@ public class GoodBoyeBot extends ListenerAdapter {
 			if (users.containsKey(author.getName())) {
 				users.get(author.getName()).givePoints(0.1);
 			} else {
-				users.put(author.getName(), new GoodBoyeUser(author.getName()));
-				users.get(author.getName()).givePoints(0.1);
+				users.put(author.getName(), new GoodBoyeUser(author));
+				users.get(author.getName()).givePoints(.1);
 			}
 			if (commands.containsKey(args[0])) {
 				commands.get(args[0]).run(event, args);

@@ -1,7 +1,9 @@
-package commands;
+package commands.meta;
 
 import net.dv8tion.jda.core.entities.MessageChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+import commands.Command;
 
 /**
  * @author Patrick Ubelhor

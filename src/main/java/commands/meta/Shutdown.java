@@ -1,6 +1,9 @@
-package commands;
+package commands.meta;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+
+import commands.Command;
+import main.GoodBoyeBot;
 
 /**
  * @author Patrick Ubelhor
@@ -15,7 +18,13 @@ public class Shutdown extends Command {
 	
 	@Override
 	public void run(MessageReceivedEvent event, String[] args) {
-		event.getJDA().shutdown();
+		if (args.length == 1) {
+			for (Command command : getCommandMap().values()) {
+				command.end();
+			}
+			event.getChannel().sendMessage("Goodnight!").queue();
+			event.getJDA().shutdown();
+		}
 	}
 	
 	

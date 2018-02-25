@@ -1,4 +1,4 @@
-package commands;
+package commands.images;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -6,6 +6,8 @@ import java.io.File;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
+
+import commands.Command;
 
 
 /**
@@ -84,7 +86,7 @@ public class SpankBank extends Command {
 	
 	@Override
 	public String getUsage() {
-		return getName();
+		return getName() + " [String] {int}";
 	}
 	
 	
