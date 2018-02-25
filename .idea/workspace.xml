@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ab021d-010a-4a01-bf54-c9e79930b413" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/meta/BotAdmin.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java" afterPath="$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Help.java" afterPath="$PROJECT_DIR$/src/main/java/commands/meta/Help.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/MemeBank.java" afterPath="$PROJECT_DIR$/src/main/java/commands/images/MemeBank.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Shutdown.java" afterPath="$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SpankBank.java" afterPath="$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" afterPath="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java" afterPath="$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,41 +73,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="e#140#176#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GoodBoyeBot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="274">
+              <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
                 <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
                 <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-                <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
                 <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+                <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodBoyePoints.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -111,60 +93,71 @@
       <file leaf-file-name="GoodBoyeUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemeBank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/MemeBank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="58" column="76" lean-forward="false" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
+            <state relative-caret-position="240">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="docComment;class#MemeBank#0" expanded="true" />
-                <element signature="method#MemeBank#0;class#MemeBank#0" expanded="true" />
-                <element signature="e#2739#2740#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-                <element signature="e#2811#2812#0" expanded="true" />
-                <element signature="e#2859#2860#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Shutdown.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Shutdown.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
               <folding>
                 <element signature="docComment;class#Shutdown#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodBoyePoints.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BotAdmin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/BotAdmin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="88" lean-forward="false" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="method#run#0;class#BotAdmin#0" expanded="true" />
+                <element signature="e#2226#2227#0" expanded="true" />
+                <element signature="e#2272#2273#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2395#2396#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SpankBank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/SpankBank.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
+            <state relative-caret-position="834">
+              <caret line="88" column="29" lean-forward="false" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
               <folding>
                 <element signature="docComment;class#SpankBank#0" expanded="true" />
-                <element signature="method#SpankBank#0;class#SpankBank#0" expanded="true" />
-                <element signature="e#2773#2774#0" expanded="true" />
-                <element signature="e#2796#2797#0" expanded="true" />
-                <element signature="e#2845#2846#0" expanded="true" />
-                <element signature="e#2893#2894#0" expanded="true" />
+                <element signature="method#run#0;class#SpankBank#0" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
+                <element signature="e#2849#2850#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,6 +176,7 @@
     <findStrings>
       <find>’</find>
       <find>spankbank</find>
+      <find>spank</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -518,13 +512,20 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/help.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/Shutdown.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Globals.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/SpankBank.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/MemeBank.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/Shutdown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/MemeBank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/meta/Help.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/meta/MakeBotAdmin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/images/MemeBank.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/meta/BotAdmin.java" />
       </list>
     </option>
   </component>
@@ -610,6 +611,24 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoodBoyeBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoodBoyeBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoodBoyeBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoodBoyeBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoodBoyeBot" type="b2602c69:ProjectViewProjectNode" />
@@ -782,7 +801,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21730000" />
+    <option name="totallyTimeSpent" value="27658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -857,33 +876,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Shutdown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Shutdown#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,32 +898,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/SpankBank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
           <folding>
             <element signature="docComment;class#SpankBank#0" expanded="true" />
-            <element signature="method#SpankBank#0;class#SpankBank#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2845#2846#0" expanded="true" />
-            <element signature="e#2893#2894#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/MemeBank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/MemeBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="58" column="76" lean-forward="false" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
           <folding>
             <element signature="docComment;class#MemeBank#0" expanded="true" />
-            <element signature="method#MemeBank#0;class#MemeBank#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2812#2813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,8 +931,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -951,7 +947,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Help.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
@@ -991,8 +987,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1054,7 +1050,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Help.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
@@ -1077,18 +1073,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Shutdown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Shutdown#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1101,32 +1095,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/SpankBank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
           <folding>
             <element signature="docComment;class#SpankBank#0" expanded="true" />
-            <element signature="method#SpankBank#0;class#SpankBank#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2845#2846#0" expanded="true" />
-            <element signature="e#2893#2894#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/MemeBank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/MemeBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="58" column="76" lean-forward="false" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
           <folding>
             <element signature="docComment;class#MemeBank#0" expanded="true" />
-            <element signature="method#MemeBank#0;class#MemeBank#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2812#2813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1140,8 +1128,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1156,7 +1144,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Help.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
@@ -1196,8 +1184,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1278,8 +1266,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1325,38 +1313,8 @@
             <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
             <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
             <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/SpankBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="58" column="77" lean-forward="false" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
-          <folding>
-            <element signature="docComment;class#SpankBank#0" expanded="true" />
-            <element signature="method#SpankBank#0;class#SpankBank#0" expanded="true" />
-            <element signature="e#2773#2774#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2845#2846#0" expanded="true" />
-            <element signature="e#2893#2894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/MemeBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="58" column="76" lean-forward="false" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
-          <folding>
-            <element signature="docComment;class#MemeBank#0" expanded="true" />
-            <element signature="method#MemeBank#0;class#MemeBank#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1382,16 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Help.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="method#run#0;class#Help#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1405,22 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Shutdown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Shutdown#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Globals.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1429,34 +1361,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/MemeBank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="432">
+          <caret line="85" column="42" lean-forward="false" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+          <folding>
+            <element signature="docComment;class#MemeBank#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2812#2813#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Help.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="80">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
-            <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#run#0;class#Help#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/GoodBoyePoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/Shutdown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+          <folding>
+            <element signature="docComment;class#Shutdown#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/GoodBoyeBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="60" column="43" lean-forward="false" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#main#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="docComment;method#commandToMap#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="docComment;method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+            <element signature="method#onMessageReceived#0;class#GoodBoyeBot#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/images/SpankBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="88" column="29" lean-forward="false" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+          <folding>
+            <element signature="docComment;class#SpankBank#0" expanded="true" />
+            <element signature="method#run#0;class#SpankBank#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/meta/BotAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="88" lean-forward="false" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="method#run#0;class#BotAdmin#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

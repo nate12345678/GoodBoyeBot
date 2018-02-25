@@ -21,6 +21,9 @@ public class GoodBoyePoints extends Command {
 		MessageChannel channel = event.getChannel();
 		User author = event.getAuthor();
 		if (args.length > 0) {
+//			if (author.getName().equals(GoodBoyeBot.users.get().getName())) {
+//				points = GoodBoyeBot.users.get(author.getName()).getPoints() - 0.1;
+//			}
 			channel.sendMessage(GoodBoyeBot.users.get(author.getName()).getName() + " has " + GoodBoyeBot.users.get(author.getName()).getPoints() + " 'Good Boye Points'").queue();
 		}
 	}
