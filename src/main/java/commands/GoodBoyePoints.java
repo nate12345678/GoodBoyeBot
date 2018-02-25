@@ -11,9 +11,10 @@ import java.util.ArrayList;
 
 public class GoodBoyePoints extends Command {
 	static final String POINT_HELP = "```Usage:\n\n" +
+			"Balance: Prints out amount of 'Good Boye Points' you have\n\n" +
+			"Show [name]: Displays the amount of 'Good Boye Points' of a user\n\n" +
 			"Give [name, int]: Adds an amount of 'Good Boye Points' to a user (Admin Only)\n\n" +
-			"Take [name, int}: Removes an amount of 'Good Boye Points' from a user (Admin Only)\n\n" +
-			"Balance: Prints out amount of 'Good Boye Points' you have```";
+			"Take [name, int}: Removes an amount of 'Good Boye Points' from a user (Admin Only)```";
 
 
 	public GoodBoyePoints() {
@@ -29,13 +30,24 @@ public class GoodBoyePoints extends Command {
 				event.getChannel().sendMessage(POINT_HELP).queue();
 				break;
 			case "take":
-				GoodBoyeBot.users.get(args[2]).removePoints(Double.parseDouble(args[3]));
+				if (GoodBoyeBot.users.get(author.getName()).isBotAdmin()) {
+					GoodBoyeBot.users.get(args[2]).removePoints(Double.parseDouble(args[3]));
+				} else {
+					channel.sendMessage("Permissions error. You are not admin for this bot");
+				}
 				break;
 			case "give":
-				GoodBoyeBot.users.get(args[2]).givePoints(Double.parseDouble(args[3]));
+				if(GoodBoyeBot.users.get(author.getName()).isBotAdmin()) {
+					GoodBoyeBot.users.get(args[2]).givePoints(Double.parseDouble(args[3]));
+				} else {
+					channel.sendMessage("Permissions error. You are not admin for this bot");
+				}
 				break;
 			case "balance":
 				channel.sendMessage(GoodBoyeBot.users.get(author.getName()).getName() + " has " + String.format("%.1f", GoodBoyeBot.users.get(author.getName()).getPoints()) + " 'Good Boye Points'").queue();
+				break;
+			case "show":
+				channel.sendMessage(GoodBoyeBot.users.get(args[2]).getName() + " has " + String.format("%.1f", GoodBoyeBot.users.get(args[2]).getPoints()) + " 'Good Boye Points'").queue();
 				break;
 			default:
 				event.getChannel().sendMessage("Arguments invalid. type \"goodboyepoints help\" for more info.").queue();
