@@ -1,13 +1,18 @@
 version '1.0'
 
 apply plugin: 'java'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
+mainClassName = "main.GoodBoyeBot"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'net.dv8tion:JDA:3.5.1_339'
+    compile 'com.google.code.gson:gson:2.8.2'
 }
